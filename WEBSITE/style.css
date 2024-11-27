@@ -1,0 +1,416 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#8F559F;
+}
+
+.button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#de847b;
+  border: none;
+  border-radius: 15px;
+  margin-top:-45px;
+  float:right;
+  margin-right:10px;
+}
+
+.button1:hover {
+background-color: #de847b;
+}
+
+.button1:active {
+  background-color:#de847b;
+  transform: translateY(4px);
+}
+
+h1 {
+  text-align: center;
+  margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#DEB9EA;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#4B1440;
+}
+
+.active,
+.collapsible:hover {
+  background-color:#4B1440;
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#DEB9EA;
+  color:#a82810;
+}
+
+.block{
+background-color:#4B1440;
+opacity: 0.8;
+}
+
+
+p{
+text-align:left;
+}
+
+/* biodata */
+
+.biodata {
+  line-height: 1.56;
+  font-size: 20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-top:-370px;
+  margin-left:850px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.k2 {
+margin-top: -715px;
+margin-left: 1065px;
+
+}
+
+
+/* experience */
+
+th{
+background-color:#DEB9EA;
+}
+
+
+tr{
+border: 10px #e9dac4; 
+}
+
+
+tr:hover{
+background-color:#4B1440;
+opacity: 0.8;
+transform: scale(1.25);
+transition: transform 300ms ease-in;
+}
+
+table{
+border-color:#4B1440;
+}
+
+/* education */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {  
+opacity: 0.5;
+ }
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 30px;
+}
+
+.text2 {
+  color: white;
+  font-size:30px;
+}
+
+
+.row {
+  display: flex;
+  padding:5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+
+/* skills */
+.icon-bar {
+  width: 90px;
+  background-color:#4B1440;
+  opacity:0.7;
+  float:right;
+  position:reflective;
+  height:350px;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color:#e9dac4;
+}
+
+.skills{
+padding:10px;
+}
+
+
+/* gallery */
+audio{
+margin-left:20px;
+}
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from { opacity: .4; } 
+      to { opacity: 1; }
+    }
+
+    @media only screen and (max-width: 300px) {
+      .prev, .next, .text { font-size: 11px; }
+    }
+/* contact */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  position:reflective;
+  float:right;
+  background-color:#4B1440;
+}
+
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+form{
+margin-left:40px;
+color:white;
+}
+
+textarea {
+  width: 60%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #4B1440;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  color:#4B1440;
+}
+
+input[type=text] {
+  border: 2px solid #4B1440;
+  border-radius: 4px;
+  width: 60%;
+  height: 30px;
+  color:#4B1440;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color:#4B1440;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* footer */
+#up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+#clock {
+font-size: 20px;
+text-align:left;
+padding:0;
+}
+
+
+
+/*animation*/
+.slide-in-left {
+  font-size: 24px;
+  transform: translateX(-100%);
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
